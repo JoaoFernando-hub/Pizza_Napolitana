@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authentic Pizza Napolitana</title>
+    <link rel="stylesheet" href="style2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- LOADER -->
+    <div id="loader">
+        <div class="loader-logo">
+            <img src="./imgs/logo.jpeg" alt="Authentic Pizza Napolitana" class="loader-img">
+        </div>
+        <div class="loader-bar-container">
+            <div class="loader-bar"></div>
+        </div>
+        <p class="loader-text">Preparando sua experiência...</p>
+    </div>
+
+    <!-- TOAST -->
+    <div class="toast" id="toast">🍕 Redirecionando para o pedido!</div>
+
+    <!-- FLOATING BUTTONS -->
+    <div class="floating-buttons">
+        <a href="https://wa.me/5519999818943?text=" 
+           class="float-btn float-whatsapp" target="_blank">
+            <span>💬</span>
+            <div class="tooltip">Pedir pelo WhatsApp</div>
+        </a>
+        <a href="https://www.instagram.com/authentic_napolitana?igsh=MWFhM2d0ODhkc3BvMA==" 
+           class="float-btn float-instagram" target="_blank">
+            <span>📸</span>
+            <div class="tooltip">Ver no Instagram</div>
+        </a>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav id="navbar">
+        <div class="nav-logo">
+            <img src="./imgs/logo.jpeg" alt="Logo" class="nav-logo-img">
+        </div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#hero">Início</a></li>
+            <li><a href="#cardapio">Cardápio</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#depoimentos">Avaliações</a></li>
+            <li><a href="#pedido">Pedidos</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- ===== HERO ===== -->
+    <section id="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+        <div class="particles" id="particles"></div>
+
+        <!-- Bandeira italiana decorativa -->
+        <div class="italian-flag-bar"></div>
+
+        <div class="hero-content">
+            <div class="hero-logo-container">
+                <img src="./imgs/logo.jpeg" alt="Authentic Pizza Napolitana" class="hero-logo">
+            </div>
+            <div class="hero-badge">
+                <span class="badge-line green-line"></span>
+                Autêntica Pizza Napolitana desde Nápoles
+                <span class="badge-line red-line"></span>
+            </div>
+            <h1 class="hero-title">
+                <span class="linha1">Sabor que você</span>
+                <span class="linha2">nunca vai esquecer</span>
+            </h1>
+            <p class="hero-subtitle">
+                Massa artesanal fermentada por até 24h · Ingredientes importados da Itália<br>
+                Assada em forno a 480°C · Pronta em menos de 2 minutos
+            </p>
+            <div class="hero-divider">
+                <span class="divider-line"></span>
+                <span class="divider-icon">🍕</span>
+                <span class="divider-line"></span>
+            </div>
+            <div class="hero-buttons">
+                <a href="https://authenticnapolitana.pedido.app.br/?utm_source=ig&utm_medium=social&utm_content=link_in_bio" 
+                   class="btn btn-primary" target="_blank">
+                   🛵 Pedir Agora
+                </a>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <span></span>
+        </div>
+
+        <!-- Decoração italiana -->
+        <div class="hero-decoration left">🌿</div>
+        <div class="hero-decoration right">🌿</div>
+    </section>
+
+    <!-- ===== FAIXA ITALIANA ===== -->
+    <div class="italian-strip">
+        <div class="strip-green"></div>
+        <div class="strip-white">
+            <span>🍕 AUTHENTIC PIZZA NAPOLITANA 🍕</span>
+        </div>
+        <div class="strip-red"></div>
+    </div>
+
+    <!-- ===== DIFERENCIAIS ===== -->
+    <section id="diferenciais">
+        <div class="section-title">
+            <div class="ornament">✦ ✦ ✦</div>
+            <h2>Por que somos autênticos?</h2>
+            <p>A verdadeira pizza napolitana, feita do jeito certo</p>
+            <div class="title-flag">
+                <span class="f-green"></span>
+                <span class="f-white"></span>
+                <span class="f-red"></span>
+            </div>
+        </div>
+        <div class="diferenciais-grid">
+            <div class="diferencial-card">
+                <span class="diferencial-icon">🌿</span>
+                <h3>Ingredientes Importados</h3>
+                <p>Farinha italiana, uma das mais amadas Le 5 Stagione, mozzarella Fior di Latte. Só o melhor da Itália.</p>
+            </div>
+            <div class="diferencial-card">
+                <span class="diferencial-icon">⚡</span>
+                <h3>Entrega Rápida</h3>
+                <p>Sua pizza chega quentinha e no ponto perfeito. Rapidez sem abrir mão da qualidade.</p>
+            </div>
+            <div class="diferencial-card">
+                <span class="diferencial-icon">👨‍🍳</span>
+                <h3>Pizzaiolo Certificado</h3>
+                <p>Formação com pizzaiolo profissional napolitano. Mais de 10 anos de experiência e paixão pela arte.</p>
+            </div>
+            <div class="diferencial-card">
+                <span class="diferencial-icon">🔥</span>
+                <h3>Forno a 480°C</h3>
+                <p>Assada em altíssima temperatura por menos de 2 minutos. Borda airada, massa leve e irresistível.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CARDÁPIO ===== -->
+    <section id="cardapio">
+        <div class="section-title">
+            <div class="ornament">✦ ✦ ✦</div>
+            <h2>Nosso Cardápio</h2>
+            <p>Escolha sua favorita e peça agora mesmo</p>
+            <div class="title-flag">
+                <span class="f-green"></span>
+                <span class="f-white"></span>
+                <span class="f-red"></span>
+            </div>
+        </div>
+
+        </div>
+
+        <div class="menu-grid" id="menuGrid">
+
+            <!-- Clássicas -->
+             
+            <div class="pizza-card" data-categoria="classicas">
+                <div class="pizza-img">
+                    <img src="./imgs/pizza1.jpeg" alt="Lombo">
+                    <div class="card-badge">Clássica</div>
+                </div>
+                <div class="pizza-info">
+                    <h3>Lombo Premium</h3>
+                    <p>Molho de tomate artesanal, mussarela, lombo selecionado, tomate cereja e manjericão fresco.</p>
+                    <div class="pizza-footer">
+                        <div class="pizza-preco">
+                            <span>A partir de</span>
+                            R$ 65,00
+                        </div>
+                        <a href="https://authenticnapolitana.pedido.app.br/?utm_source=ig&utm_medium=social&utm_content=link_in_bio"
+                           class="btn-pedir" target="_blank">Pedir 🛵</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pizza-card" data-categoria="classicas">
+                <div class="pizza-img">
+                    <img src="./imgs/pizza2.jpeg" alt="Pepperoni">
+                    <div class="card-badge">Clássica</div>
+                </div>
+                <div class="pizza-info">
+                    <h3>Pepperoni</h3>
+                    <p>Mozzarela Fior di Latte, Orégano, Pepperoni importado, Molho Pomodoro.</p>
+                    <div class="pizza-footer">
+                        <div class="pizza-preco">
+                            <span>A partir de</span>
+                            R$ 65,00
+                        </div>
+                        <a href="https://authenticnapolitana.pedido.app.br/?utm_source=ig&utm_medium=social&utm_content=link_in_bio"
+                           class="btn-pedir" target="_blank">Pedir 🛵</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Especiais -->
+            <div class="pizza-card" data-categoria="especiais">
+                <div class="pizza-img">
+                    <img src="./imgs/pizza3.jpeg" alt="Margherita">
+                    <div class="card-badge especial-badge">Especial</div>
+                </div>
+                <div class="pizza-info">
+                    <h3>Margherita</h3>
+                    <p>Molho Pomodoro, Mozzarela Fior di Latte, manjericão fresco e azeite extra virgem.</p>
+                    <div class="pizza-footer">
+                        <div class="pizza-preco">
+                            <span>A partir de</span>
+                            R$ 65,00
+                        </div>
+                        <a href="https://authenticnapolitana.pedido.app.br/?utm_source=ig&utm_medium=social&utm_content=link_in_bio"
+                           class="btn-pedir" target="_blank">Pedir 🛵</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pizza-card" data-categoria="especiais">
+                <div class="pizza-img">
+                    <img src="./imgs/pizza4.jpeg" alt="Pepperoni c/ Cebola">
+                    <div class="card-badge especial-badge">Especial</div>
+                </div>
+                <div class="pizza-info">
+                    <h3>Pepperoni c/ Cebola</h3>
+                    <p>Mozzarela Fior di Latte, Orégano, Pepperoni, Molho Pomodoro, Cebola Roxa caramelizada.</p>
+                    <div class="pizza-footer">
+                        <div class="pizza-preco">
+                            <span>A partir de</span>
+                            R$ 65,00
+                        </div>
+                        <a href="https://authenticnapolitana.pedido.app.br/?utm_source=ig&utm_medium=social&utm_content=link_in_bio"
+                           class="btn-pedir" target="_blank">Pedir 🛵</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pizza-card" data-categoria="especiais">
+                <div class="pizza-img">
+                    <img src="./imgs/pizza5.jpeg" alt="Milho c/ Bacon">
+                    <div class="card-badge especial-badge">Especial</div>
+                </div>
+                <div class="pizza-info">
+                    <h3>Milho c/ Bacon</h3>
+                    <p>Catupiry, Milho, Mozzarela Fior di Latte, Orégano, Bacon crocante, Molho Pomodoro.</p>
+                    <div class="pizza-footer">
+                        <div class="pizza-preco">
+                            <span>A partir de</span>
+                            R$ 65,00
+                        </div>
+                        <a href="https://authenticnapolitana.pedido.app.br/?utm_source=ig&utm_medium=social&utm_content=link_in_bio"
+                           class="btn-pedir" target="_blank">Pedir 🛵</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Doces -->
+            <div class="pizza-card" data-categoria="doces">
+                <div class="pizza-img">
+                    <img src="./imgs/pizza6.jpeg" alt="Portuguesa">
+                    <div class="card-badge doce-badge">Doce</div>
+                </div>
+                <div class="pizza-info">
+                    <h3>Portuguesa</h3>
+                    <p>Presunto, ovos, cebola, azeitona e mussarela em uma combinação clássica e irresistível.</p>
+                    <div class="pizza-footer">
+                        <div class="pizza-preco">
+                            <span>A partir de</span>
+                            R$ 65,00
+                        </div>
+                        <a href="https://authenticnapolitana.pedido.app.br/?utm_source=ig&utm_medium=social&utm_content=link_in_bio"
+                           class="btn-pedir" target="_blank">Pedir 🛵</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pizza-card" data-categoria="doces">
+                <div class="pizza-img">
+                    <img src="./imgs/Doce.jpeg" alt="Pistache">
+                    <div class="card-badge doce-badge">Doce</div>
+                </div>
+                <div class="pizza-info">
+                    <h3>Pistache</h3>
+                    <p>Creme de pistache artesanal, mozzarela, mel e pistaches inteiros tostados. Única!</p>
+                    <div class="pizza-footer">
+                        <div class="pizza-preco">
+                            <span>A partir de</span>
+                            R$ 70,00
+                        </div>
+                        <a href="https://authenticnapolitana.pedido.app.br/?utm_source=ig&utm_medium=social&utm_content=link_in_bio"
+                           class="btn-pedir" target="_blank">Pedir 🛵</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- CTA Cardápio -->
+        <div class="cardapio-cta">
+            <p>Quer ver o cardápio completo?</p>
+            <a href="https://authenticnapolitana.pedido.app.br/?utm_source=ig&utm_medium=social&utm_content=link_in_bio"
+               class="btn btn-primary" target="_blank">
+               Ver Cardápio Completo 🍕
+            </a>
+        </div>
+    </section>
+
+    <!-- ===== SOBRE ===== -->
+    <section id="sobre">
+        <div class="sobre-container">
+            <div class="sobre-visual">
+                <div class="img-frame">
+                    <img src="./imgs/ra.jpeg" alt="Nosso Pizzaiolo" id="img-chef">
+                    <div class="img-border"></div>
+                    <div class="img-flag">
+                        <span></span><span></span><span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="sobre-content reveal">
+                <div class="ornament" style="text-align:left; color: var(--verde-italiano);">✦ ✦ ✦</div>
+                <h2>Nossa História</h2>
+                <div class="sobre-flag-divider">
+                    <span class="f-green"></span>
+                    <span class="f-white"></span>
+                    <span class="f-red"></span>
+                </div>
+                <p>
+                    A pizza napolitana nasceu em Nápoles, Itália, por volta de 1700 e é reconhecida pela UNESCO como Patrimônio Cultural Imaterial da Humanidade. É um estilo completamente artesanal.
+                </p>
+                <p>
+                    Nossa massa é feita com apenas 4 ingredientes: água, sal, farinha importada da Itália tipo 00 e fermento biológico. A fermentação lenta dura de 12h a 24h de forma natural, o que proporciona digestibilidade superior e resulta em um sabor mais complexo e agradável, com notas sutis de acidez e aroma inconfundível.
+                </p>
+                <p>
+                    A cobertura é intensa em sabor e balanceada em ingredientes — alta qualidade, importados, frescos e naturais, preparados preferencialmente de forma manual. Finalizada em fornos que chegam a 480°C, em pouco mais de um minuto produzem uma pizza de massa fina, bordas airadas, elegante e irresistível.
+                </p>
+                <div class="sobre-stats">
+                    <div class="stat">
+                        <span class="stat-num" data-target="3">0</span>
+                        <span class="stat-label">Anos de experiência</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-num" data-target="5000">0</span>
+                        <span class="stat-label">Clientes felizes</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-num" data-target="15">0</span>
+                        <span class="stat-label">Sabores no cardápio</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== DEPOIMENTOS ===== -->
+    <section id="depoimentos">
+        <div class="section-title">
+            <div class="ornament">✦ ✦ ✦</div>
+            <h2>O que dizem nossos clientes</h2>
+            <p>Avaliações reais de quem já viveu essa experiência</p>
+            <div class="title-flag">
+                <span class="f-green"></span>
+                <span class="f-white"></span>
+                <span class="f-red"></span>
+            </div>
+        </div>
+        <div class="depoimentos-slider">
+            <button class="slider-btn" id="prevBtn" onclick="changeSlide(-1)">◀</button>
+            <div class="slider-overflow">
+                <div class="depoimentos-track" id="depoimentosTrack">
+                    <div class="depoimento-card">
+                        <div class="quote-icon">"</div>
+                        <div class="depoimento-stars">⭐⭐⭐⭐⭐</div>
+                        <p class="depoimento-text">Nunca vi e nem comi nada igual.. simplesmente deliciosa, saborosa, leve, todos os recheios individualmente percebido simplesmente uma alquimia de sabores... só mesmo na Itália que vcs nos permitiram ir até lá com essas iguarias que provei hoje</p>
+                        <div class="depoimento-autor">
+                            <div class="autor-avatar">🥰</div>
+                            <div class="autor-info">
+                                <strong>Anonimo</strong>
+                                <span>Cliente fiel ⭐</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="depoimento-card">
+                        <div class="quote-icon">"</div>
+                        <div class="depoimento-stars">⭐⭐⭐⭐⭐</div>
+                        <p class="depoimento-text">Parabens adoramos! Lembramos de Napóles.</p>
+                        <div class="depoimento-autor">
+                            <div class="autor-avatar">😊</div>
+                            <div class="autor-info">
+                                <strong>Alessandra Sumara Cassago Posso</strong>
+                                <span>Cliente fiel ⭐</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="depoimento-card">
+                        <div class="quote-icon">"</div>
+                        <div class="depoimento-stars">⭐⭐⭐⭐⭐</div>
+                        <p class="depoimento-text">Exelente!!! Super saborosa! Massa deliciosa!!! Em cada pedaco dá para sentir o capricho que foi confeccionada.PARABéNS a toda a equipe e aos idealiziadores do authentic Napolitana🍕❤️</p>
+                        <div class="depoimento-autor">
+                            <div class="autor-avatar">🥰</div>
+                            <div class="autor-info">
+                                <strong>Glaucia Tech Dos Santos</strong>
+                                <span>Cliente fiel ⭐</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="depoimento-card">
+                        <div class="quote-icon">"</div>
+                        <div class="depoimento-stars">⭐⭐⭐⭐⭐</div>
+                        <p class="depoimento-text">Maravilhosa, como sempre de exelente qualidade.</p>
+                        <div class="depoimento-autor">
+                            <div class="autor-avatar">😄</div>
+                            <div class="autor-info">
+                                <strong>Elizabeth Eidt</strong>
+                                <span>Primeira vez que provou, se tronou cliente Fiel</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="slider-btn" id="nextBtn" onclick="changeSlide(1)">▶</button>
+        </div>
+        <div class="slider-controls">
+            <button class="slider-dot active" onclick="goToSlide(0)"></button>
+            <button class="slider-dot" onclick="goToSlide(1)"></button>
+            <button class="slider-dot" onclick="goToSlide(2)"></button>
+            <button class="slider-dot" onclick="goToSlide(3)"></button>
+        </div>
+    </section>
+
+    <!-- ===== PEDIDO ===== -->
+    <section id="pedido">
+        <div class="pedido-container">
+            <div class="section-title">
+                <div class="ornament">✦ ✦ ✦</div>
+                <h2>Faça seu Pedido</h2>
+                <p>Escolha como prefere entrar em contato conosco</p>
+                <div class="title-flag">
+                    <span class="f-green"></span>
+                    <span class="f-white"></span>
+                    <span class="f-red"></span>
+                </div>
+            </div>
+
+            <!-- PEDIDO PELO SITE -->
+            <div class="pedido-site reveal">
+                <div class="pedido-site-icon">🛵</div>
+                <h3>Peça pelo nosso site</h3>
+                <p>Cardápio completo, valores atualizados e pedido fácil</p>
+                <a href="https://authenticnapolitana.pedido.app.br/?utm_source=ig&utm_medium=social&utm_content=link_in_bio"
+                   class="btn btn-primary" target="_blank" style="margin-top: 20px; display:inline-flex;">
+                   🍕 Acessar Cardápio Online
+                </a>
+            </div>
+
+            <div class="pedido-ou">
+                <span>ou fale diretamente</span>
+            </div>
+
+            <div class="pedido-options">
+                <a href="https://wa.me/5519999818943?text=" 
+                   class="pedido-option whatsapp-opt" target="_blank">
+                    <span class="pedido-option-icon"><img src="./imgs/wats-logo.png" alt="logo" id="wats"></span>
+                    <h3>WhatsApp</h3>
+                    <p>Envie sua mensagem e receba atendimento rápido e personalizado.</p>
+                    <br>
+                    <span class="cta-link green-cta">Clique para abrir ➜</span>
+                </a>
+                <a href="https://www.instagram.com/authentic_napolitana?igsh=MWFhM2d0ODhkc3BvMA==" 
+                   class="pedido-option instagram-opt" target="_blank">
+                    <span class="pedido-option-icon"><img src="imgs/ig.png" alt="logo" id="ig"></span>
+                    <h3>Instagram</h3>
+                    <p>Veja nossas midias incríveis, e conheca nossas imagens.</p>
+                    <br>
+                    <span class="cta-link red-cta">Nos siga ➜</span>
+                </a>
+            </div>
+
+            <div class="pedido-horario reveal">
+                <div class="horario-header">
+                    <span class="h-flag">🇮🇹</span>
+                    <h3>Horário de Funcionamento</h3>
+                </div>
+                <div class="horario-grid">
+                    <div class="horario-item fechado">
+                        <span class="dia">Segunda-feira</span>
+                        <span class="hora closed">Fechado</span>
+                    </div>
+                    <div class="horario-item">
+                        <span class="dia">Terça - Quinta</span>
+                        <span class="hora">18h — 23h</span>
+                    </div>
+                    <div class="horario-item destaque">
+                        <span class="dia">Sexta-feira 🔥</span>
+                        <span class="hora">18h — 00h</span>
+                    </div>
+                    <div class="horario-item destaque">
+                        <span class="dia">Sábado 🔥</span>
+                        <span class="hora">17h — 00h</span>
+                    </div>
+                    <div class="horario-item">
+                        <span class="dia">Domingo</span>
+                        <span class="hora">17h — 23h</span>
+                    </div>
+                    <div class="horario-item">
+                        <span class="dia">Feriados</span>
+                        <span class="hora">17h — 23h</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <div class="footer-italian-bar">
+            <span class="fb-green"></span>
+            <span class="fb-white"></span>
+            <span class="fb-red"></span>
+        </div>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <img src="./imgs/logo.jpeg" alt="Authentic Pizza Napolitana" class="footer-logo">
+                <p>A autêntica pizza napolitana, feita com ingredientes importados da Itália e muito amor. 
+                Trazemos Nápoles até você.</p>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/authentic_napolitana?igsh=MWFhM2d0ODhkc3BvMA==" class="social-link ig" target="_blank">📸</a>
+                    <a href="https://wa.me/5519999818943" class="social-link wa" target="_blank">💬</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Contato</h4>
+                <ul>
+                    <li><a href="https://wa.me/5519999818943" target="_blank">📱 (+55) 19 99981-8943</a></li>
+                    <li><p>📍 Santa Rita Do P. Quatro-SP</p></li>
+                    <li><a href="https://www.instagram.com/authentic_napolitana?igsh=MWFhM2d0ODhkc3BvMA==" target="_blank">📸 @authenticnapolitana</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 <span class="brand-name">Authentic Pizza Napolitana</span>. Todos os direitos reservados. 
+            Feito com <span class="heart">❤️</span> e muito queijo italiano.</p>
+        </div>
+    </footer>
+
+    <script>
+        // ===== LOADER =====
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                document.getElementById('loader').classList.add('hidden');
+            }, 2500);
+        });
+
+        // ===== PARTICLES =====
+        const particlesContainer = document.getElementById('particles');
+        const emojis = ['🌿', '🍅', '⭐', '🫒', '🧀', '🌶️', '🍃'];
+
+        for (let i = 0; i < 12; i++) {
+            const p = document.createElement('div');
+            p.className = 'particle';
+            p.textContent = emojis[Math.floor(Math.random() * emojis.length)];
+            p.style.left = Math.random() * 100 + '%';
+            p.style.animationDuration = (10 + Math.random() * 15) + 's';
+            p.style.animationDelay = (Math.random() * 12) + 's';
+            p.style.fontSize = (12 + Math.random() * 18) + 'px';
+            particlesContainer.appendChild(p);
+        }
+
+        // ===== NAVBAR SCROLL =====
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            navbar.classList.toggle('scrolled', window.scrollY > 80);
+        });
+
+        // ===== HAMBURGER =====
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('navLinks');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navLinks.classList.toggle('open');
+        });
+
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navLinks.classList.remove('open');
+            });
+        });
+
+        // ===== SCROLL REVEAL =====
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.diferencial-card, .pizza-card, .reveal').forEach(el => {
+            observer.observe(el);
+        });
+
+        document.querySelectorAll('.diferencial-card').forEach((card, i) => {
+            card.style.transitionDelay = `${i * 0.12}s`;
+        });
+
+        document.querySelectorAll('.pizza-card').forEach((card, i) => {
+            card.style.transitionDelay = `${i * 0.08}s`;
+        });
+
+        // ===== CONTADOR STATS =====
+        const statsObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const nums = entry.target.querySelectorAll('.stat-num');
+                    nums.forEach(num => {
+                        const target = parseInt(num.getAttribute('data-target'));
+                        let current = 0;
+                        const increment = target / 60;
+                        const timer = setInterval(() => {
+                            current += increment;
+                            if (current >= target) {
+                                current = target;
+                                clearInterval(timer);
+                            }
+                            num.textContent = target > 999 
+                                ? Math.floor(current).toLocaleString('pt-BR') + '+'
+                                : Math.floor(current) + '+';
+                        }, 30);
+                    });
+                    statsObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        const sobreSection = document.getElementById('sobre');
+        if (sobreSection) statsObserver.observe(sobreSection);
+
+        // ===== MENU FILTER =====
+        function filterMenu(categoria, event) {
+            const cards = document.querySelectorAll('.pizza-card');
+            const tabs = document.querySelectorAll('.menu-tab');
+
+            tabs.forEach(tab => tab.classList.remove('active'));
+            if (event && event.target) event.target.classList.add('active');
+
+            cards.forEach(card => {
+                if (categoria === 'todas' || card.dataset.categoria === categoria) {
+                    card.style.display = 'block';
+                    setTimeout(() => {
+                        card.style.opacity = '1';
+                        card.style.transform = 'scale(1)';
+                    }, 10);
+                } else {
+                    card.style.opacity = '0';
+                    card.style.transform = 'scale(0.9)';
+                    setTimeout(() => { card.style.display = 'none'; }, 300);
+                }
+            });
+        }
+
+        // ===== SLIDER =====
+        let currentSlide = 0;
+        const totalSlides = 4;
+        let autoSlide;
+
+        function changeSlide(direction) {
+            currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
+            updateSlider();
+        }
+
+        function goToSlide(index) {
+            currentSlide = index;
+            updateSlider();
+        }
+
+        function updateSlider() {
+            const track = document.getElementById('depoimentosTrack');
+            track.style.transform = `translateX(-${currentSlide * 100}%)`;
+            document.querySelectorAll('.slider-dot').forEach((dot, i) => {
+                dot.classList.toggle('active', i === currentSlide);
+            });
+            resetAutoSlide();
+        }
+
+        function resetAutoSlide() {
+            clearInterval(autoSlide);
+            autoSlide = setInterval(() => changeSlide(1), 5000);
+        }
+
+        resetAutoSlide();
+
+        // ===== SMOOTH SCROLL =====
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            });
+        });
+
+        // ===== PARALLAX HERO =====
+        window.addEventListener('scroll', () => {
+            const scrollY = window.scrollY;
+            const heroContent = document.querySelector('.hero-content');
+            if (heroContent && scrollY < window.innerHeight) {
+                heroContent.style.transform = `translateY(${scrollY * 0.25}px)`;
+                heroContent.style.opacity = 1 - scrollY / 700;
+            }
+        });
+
+        // ===== RIPPLE =====
+        document.querySelectorAll('.btn').forEach(btn => {
+            btn.addEventListener('click', function(e) {
+                const ripple = document.createElement('span');
+                const rect = this.getBoundingClientRect();
+                ripple.style.cssText = `
+                    position: absolute; border-radius: 50%;
+                    background: rgba(255,255,255,0.25);
+                    width: 10px; height: 10px;
+                    top: ${e.clientY - rect.top - 5}px;
+                    left: ${e.clientX - rect.left - 5}px;
+                    animation: rippleAnim 0.6s ease-out forwards;
+                    pointer-events: none;
+                `;
+                this.appendChild(ripple);
+                setTimeout(() => ripple.remove(), 600);
+            });
+        });
+
+        const rippleStyle = document.createElement('style');
+        rippleStyle.textContent = `@keyframes rippleAnim { to { transform: scale(30); opacity: 0; } }`;
+        document.head.appendChild(rippleStyle);
+    </script>
+</body>
+</html>
