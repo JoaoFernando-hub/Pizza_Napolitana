@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Authentic Pizza Napolitana</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Fiamma Vera Pizza</title>
+    <link rel="stylesheet" href="./style2.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -12,7 +12,21 @@
     <!-- LOADER -->
     <div id="loader">
         <div class="loader-logo">
-            <img src="./logo.jpeg" alt="Authentic Pizza Napolitana" class="loader-img">
+            <div class="svg-logo-loader">
+                <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" width="140" height="140">
+                    <circle cx="60" cy="60" r="55" fill="#0A0A0A" stroke="#C9A84C" stroke-width="1.5"/>
+                    <circle cx="60" cy="60" r="48" fill="none" stroke="rgba(201,168,76,0.2)" stroke-width="0.5"/>
+                    <text x="60" y="52" text-anchor="middle" font-family="Georgia, serif" font-size="11" fill="#C9A84C" letter-spacing="3">FIAMMA</text>
+                    <text x="60" y="66" text-anchor="middle" font-family="Georgia, serif" font-size="7" fill="#E8DCC8" letter-spacing="5">VERA</text>
+                    <text x="60" y="78" text-anchor="middle" font-family="Georgia, serif" font-size="5" fill="rgba(201,168,76,0.6)" letter-spacing="2">PIZZA</text>
+                    <path d="M30 83 Q60 88 90 83" stroke="#C9A84C" stroke-width="0.5" fill="none" opacity="0.5"/>
+                    <path d="M38 37 Q60 20 82 37" stroke="#C9A84C" stroke-width="0.5" fill="none" opacity="0.5"/>
+                    <circle cx="38" cy="37" r="1.5" fill="#3A6B35"/>
+                    <circle cx="82" cy="37" r="1.5" fill="#B22222"/>
+                    <circle cx="30" cy="83" r="1.5" fill="#3A6B35"/>
+                    <circle cx="90" cy="83" r="1.5" fill="#B22222"/>
+                </svg>
+            </div>
         </div>
         <div class="loader-bar-container">
             <div class="loader-bar"></div>
@@ -25,22 +39,28 @@
 
     <!-- FLOATING BUTTONS -->
     <div class="floating-buttons">
-        <a href="https://wa.me/5519999818943?text=" 
-           class="float-btn float-whatsapp" target="_blank">
-            <span>💬</span>
-            <div class="tooltip">Pedir pelo WhatsApp</div>
+        <a href="#pedido" class="float-btn float-order">
+            <span>🍕</span>
+            <div class="tooltip">Fazer Pedido</div>
         </a>
-        <a href="https://www.instagram.com/authentic_napolitana?igsh=MWFhM2d0ODhkc3BvMA==" 
-           class="float-btn float-instagram" target="_blank">
-            <span>📸</span>
-            <div class="tooltip">Ver no Instagram</div>
+        <a href="#cardapio" class="float-btn float-menu">
+            <span>📋</span>
+            <div class="tooltip">Ver Cardápio</div>
         </a>
     </div>
 
     <!-- NAVBAR -->
     <nav id="navbar">
         <div class="nav-logo">
-            <img src="./logo.jpeg" alt="Logo" class="nav-logo-img">
+            <div class="nav-svg-logo">
+                <svg viewBox="0 0 120 40" xmlns="http://www.w3.org/2000/svg" width="140" height="46">
+                    <text x="8" y="22" font-family="Georgia, serif" font-size="16" fill="#C9A84C" letter-spacing="2" font-weight="bold">FIAMMA</text>
+                    <text x="8" y="34" font-family="Georgia, serif" font-size="8" fill="#E8DCC8" letter-spacing="6">VERA</text>
+                    <rect x="8" y="25" width="104" height="0.5" fill="rgba(201,168,76,0.3)"/>
+                    <circle cx="112" cy="15" r="3" fill="none" stroke="#3A6B35" stroke-width="1"/>
+                    <circle cx="112" cy="15" r="1" fill="#B22222"/>
+                </svg>
+            </div>
         </div>
         <ul class="nav-links" id="navLinks">
             <li><a href="#hero">Início</a></li>
@@ -62,35 +82,68 @@
         <div class="hero-overlay"></div>
         <div class="particles" id="particles"></div>
 
-        <!-- Bandeira italiana decorativa -->
         <div class="italian-flag-bar"></div>
 
         <div class="hero-content">
             <div class="hero-logo-container">
-                <img src="./logo.jpeg" alt="Authentic Pizza Napolitana" class="hero-logo">
+                <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="hero-svg-logo">
+                    <!-- Outer ring -->
+                    <circle cx="100" cy="100" r="92" fill="#0A0A0A" stroke="#C9A84C" stroke-width="1.5"/>
+                    <circle cx="100" cy="100" r="85" fill="none" stroke="rgba(201,168,76,0.15)" stroke-width="0.5"/>
+                    <!-- Pizza slice decorations -->
+                    <line x1="100" y1="15" x2="100" y2="185" stroke="rgba(201,168,76,0.05)" stroke-width="0.5"/>
+                    <line x1="15" y1="100" x2="185" y2="100" stroke="rgba(201,168,76,0.05)" stroke-width="0.5"/>
+                    <!-- Flame icon -->
+                    <path d="M100 55 C95 65 88 70 90 82 C92 90 98 93 100 95 C102 93 108 90 110 82 C112 70 105 65 100 55Z" 
+                          fill="url(#flameGrad)" opacity="0.9"/>
+                    <path d="M100 65 C97 72 93 75 95 83 C96 87 98 89 100 90 C102 89 104 87 105 83 C107 75 103 72 100 65Z" 
+                          fill="#FFF3CD" opacity="0.4"/>
+                    <!-- Brand name -->
+                    <text x="100" y="118" text-anchor="middle" font-family="Georgia, serif" font-size="18" fill="#C9A84C" letter-spacing="4" font-weight="bold">FIAMMA</text>
+                    <text x="100" y="132" text-anchor="middle" font-family="Georgia, serif" font-size="9" fill="#E8DCC8" letter-spacing="8">VERA</text>
+                    <!-- Divider dots -->
+                    <circle cx="68" cy="143" r="1.5" fill="#3A6B35"/>
+                    <rect x="73" y="142" width="54" height="1" fill="rgba(201,168,76,0.3)" rx="0.5"/>
+                    <circle cx="130" cy="143" r="1.5" fill="#B22222"/>
+                    <!-- Sub text -->
+                    <text x="100" y="157" text-anchor="middle" font-family="Georgia, serif" font-size="6" fill="rgba(201,168,76,0.6)" letter-spacing="3">PIZZA ARTESANAL</text>
+                    <!-- Corner ornaments -->
+                    <circle cx="100" cy="28" r="2" fill="#C9A84C" opacity="0.5"/>
+                    <circle cx="100" cy="172" r="2" fill="#C9A84C" opacity="0.5"/>
+
+                    <defs>
+                        <linearGradient id="flameGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+                            <stop offset="0%" style="stop-color:#B22222;stop-opacity:1" />
+                            <stop offset="50%" style="stop-color:#FF6B35;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#FFD700;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                </svg>
             </div>
             <div class="hero-badge">
                 <span class="badge-line green-line"></span>
-                Autêntica Pizza Napolitana desde Nápoles
+                Pizza Artesanal · Tradição Italiana
                 <span class="badge-line red-line"></span>
             </div>
             <h1 class="hero-title">
-                <span class="linha1">Sabor que você</span>
-                <span class="linha2">nunca vai esquecer</span>
+                <span class="linha1">Chama verdadeira,</span>
+                <span class="linha2">sabor eterno</span>
             </h1>
             <p class="hero-subtitle">
-                Massa artesanal fermentada por até 24h · Ingredientes importados da Itália<br>
+                Massa artesanal fermentada por até 24h · Ingredientes selecionados<br>
                 Assada em forno a 480°C · Pronta em menos de 2 minutos
             </p>
             <div class="hero-divider">
                 <span class="divider-line"></span>
-                <span class="divider-icon">🍕</span>
+                <span class="divider-icon">🔥</span>
                 <span class="divider-line"></span>
             </div>
             <div class="hero-buttons">
-                <a href="https://authenticnapolitana.pedido.app.br/?utm_source=ig&utm_medium=social&utm_content=link_in_bio" 
-                   class="btn btn-primary" target="_blank">
+                <a href="#pedido" class="btn btn-primary">
                    🛵 Pedir Agora
+                </a>
+                <a href="#cardapio" class="btn btn-outline">
+                   📋 Ver Cardápio
                 </a>
             </div>
         </div>
@@ -99,7 +152,6 @@
             <span></span>
         </div>
 
-        <!-- Decoração italiana -->
         <div class="hero-decoration left">🌿</div>
         <div class="hero-decoration right">🌿</div>
     </section>
@@ -108,7 +160,7 @@
     <div class="italian-strip">
         <div class="strip-green"></div>
         <div class="strip-white">
-            <span>🍕 AUTHENTIC PIZZA NAPOLITANA 🍕</span>
+            <span>🔥 FIAMMA VERA PIZZA 🔥</span>
         </div>
         <div class="strip-red"></div>
     </div>
@@ -117,8 +169,8 @@
     <section id="diferenciais">
         <div class="section-title">
             <div class="ornament">✦ ✦ ✦</div>
-            <h2>Por que somos autênticos?</h2>
-            <p>A verdadeira pizza napolitana, feita do jeito certo</p>
+            <h2>Por que somos únicos?</h2>
+            <p>A verdadeira pizza artesanal, feita com paixão e técnica</p>
             <div class="title-flag">
                 <span class="f-green"></span>
                 <span class="f-white"></span>
@@ -128,8 +180,8 @@
         <div class="diferenciais-grid">
             <div class="diferencial-card">
                 <span class="diferencial-icon">🌿</span>
-                <h3>Ingredientes Importados</h3>
-                <p>Farinha italiana, uma das mais amadas Le 5 Stagione, mozzarella Fior di Latte. Só o melhor da Itália.</p>
+                <h3>Ingredientes Selecionados</h3>
+                <p>Farinha especial italiana, mozzarella Fior di Latte e molho de tomate artesanal. Qualidade em cada detalhe.</p>
             </div>
             <div class="diferencial-card">
                 <span class="diferencial-icon">⚡</span>
@@ -138,8 +190,8 @@
             </div>
             <div class="diferencial-card">
                 <span class="diferencial-icon">👨‍🍳</span>
-                <h3>Pizzaiolo Certificado</h3>
-                <p>Formação com pizzaiolo profissional napolitano. Mais de 10 anos de experiência e paixão pela arte.</p>
+                <h3>Pizzaiolo Especialista</h3>
+                <p>Técnica apurada e paixão pela arte da pizza. Mais de 10 anos moldando sabores únicos e inesquecíveis.</p>
             </div>
             <div class="diferencial-card">
                 <span class="diferencial-icon">🔥</span>
@@ -162,15 +214,23 @@
             </div>
         </div>
 
-        </div>
-
         <div class="menu-grid" id="menuGrid">
 
-            <!-- Clássicas -->
-             
             <div class="pizza-card" data-categoria="classicas">
                 <div class="pizza-img">
-                    <img src="./pizza1.jpeg" alt="Lombo">
+                    <div class="pizza-img-placeholder">
+                        <svg viewBox="0 0 300 240" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+                            <rect width="300" height="240" fill="#161616"/>
+                            <circle cx="150" cy="120" r="90" fill="#1E1E1E" stroke="rgba(201,168,76,0.2)" stroke-width="1"/>
+                            <circle cx="150" cy="120" r="75" fill="#2A1A0A" opacity="0.8"/>
+                            <circle cx="130" cy="105" r="8" fill="#B22222" opacity="0.7"/>
+                            <circle cx="165" cy="98" r="6" fill="#B22222" opacity="0.6"/>
+                            <circle cx="155" cy="135" r="7" fill="#B22222" opacity="0.7"/>
+                            <circle cx="120" cy="130" r="5" fill="#3A6B35" opacity="0.8"/>
+                            <circle cx="170" cy="125" r="4" fill="#3A6B35" opacity="0.7"/>
+                            <text x="150" y="185" text-anchor="middle" font-family="Georgia" font-size="11" fill="rgba(201,168,76,0.5)" letter-spacing="2">LOMBO PREMIUM</text>
+                        </svg>
+                    </div>
                     <div class="card-badge">Clássica</div>
                 </div>
                 <div class="pizza-info">
@@ -181,15 +241,26 @@
                             <span>A partir de</span>
                             R$ 65,00
                         </div>
-                        <a href="https://authenticnapolitana.pedido.app.br/?utm_source=ig&utm_medium=social&utm_content=link_in_bio"
-                           class="btn-pedir" target="_blank">Pedir 🛵</a>
+                        <a href="#pedido" class="btn-pedir">Pedir 🛵</a>
                     </div>
                 </div>
             </div>
 
             <div class="pizza-card" data-categoria="classicas">
                 <div class="pizza-img">
-                    <img src="./pizza2.jpeg" alt="Pepperoni">
+                    <div class="pizza-img-placeholder">
+                        <svg viewBox="0 0 300 240" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+                            <rect width="300" height="240" fill="#161616"/>
+                            <circle cx="150" cy="120" r="90" fill="#1E1E1E" stroke="rgba(201,168,76,0.2)" stroke-width="1"/>
+                            <circle cx="150" cy="120" r="75" fill="#2A1A0A" opacity="0.8"/>
+                            <circle cx="128" cy="108" r="10" fill="#CC3333" opacity="0.8"/>
+                            <circle cx="158" cy="100" r="9" fill="#CC3333" opacity="0.8"/>
+                            <circle cx="148" cy="133" r="10" fill="#CC3333" opacity="0.7"/>
+                            <circle cx="120" cy="132" r="8" fill="#CC3333" opacity="0.75"/>
+                            <circle cx="172" cy="122" r="9" fill="#CC3333" opacity="0.8"/>
+                            <text x="150" y="185" text-anchor="middle" font-family="Georgia" font-size="11" fill="rgba(201,168,76,0.5)" letter-spacing="2">PEPPERONI</text>
+                        </svg>
+                    </div>
                     <div class="card-badge">Clássica</div>
                 </div>
                 <div class="pizza-info">
@@ -200,16 +271,26 @@
                             <span>A partir de</span>
                             R$ 65,00
                         </div>
-                        <a href="https://authenticnapolitana.pedido.app.br/?utm_source=ig&utm_medium=social&utm_content=link_in_bio"
-                           class="btn-pedir" target="_blank">Pedir 🛵</a>
+                        <a href="#pedido" class="btn-pedir">Pedir 🛵</a>
                     </div>
                 </div>
             </div>
 
-            <!-- Especiais -->
             <div class="pizza-card" data-categoria="especiais">
                 <div class="pizza-img">
-                    <img src="./pizza3.jpeg" alt="Margherita">
+                    <div class="pizza-img-placeholder">
+                        <svg viewBox="0 0 300 240" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+                            <rect width="300" height="240" fill="#161616"/>
+                            <circle cx="150" cy="120" r="90" fill="#1E1E1E" stroke="rgba(201,168,76,0.2)" stroke-width="1"/>
+                            <circle cx="150" cy="120" r="75" fill="#B22222" opacity="0.15"/>
+                            <ellipse cx="150" cy="120" rx="55" ry="55" fill="#E8DCC8" opacity="0.12"/>
+                            <circle cx="135" cy="110" r="7" fill="#3A6B35" opacity="0.9"/>
+                            <circle cx="165" cy="108" r="6" fill="#3A6B35" opacity="0.8"/>
+                            <circle cx="150" cy="135" r="7" fill="#3A6B35" opacity="0.9"/>
+                            <circle cx="128" cy="130" r="5" fill="#3A6B35" opacity="0.7"/>
+                            <text x="150" y="185" text-anchor="middle" font-family="Georgia" font-size="11" fill="rgba(201,168,76,0.5)" letter-spacing="2">MARGHERITA</text>
+                        </svg>
+                    </div>
                     <div class="card-badge especial-badge">Especial</div>
                 </div>
                 <div class="pizza-info">
@@ -220,15 +301,26 @@
                             <span>A partir de</span>
                             R$ 65,00
                         </div>
-                        <a href="https://authenticnapolitana.pedido.app.br/?utm_source=ig&utm_medium=social&utm_content=link_in_bio"
-                           class="btn-pedir" target="_blank">Pedir 🛵</a>
+                        <a href="#pedido" class="btn-pedir">Pedir 🛵</a>
                     </div>
                 </div>
             </div>
 
             <div class="pizza-card" data-categoria="especiais">
                 <div class="pizza-img">
-                    <img src="./pizza4.jpeg" alt="Pepperoni c/ Cebola">
+                    <div class="pizza-img-placeholder">
+                        <svg viewBox="0 0 300 240" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+                            <rect width="300" height="240" fill="#161616"/>
+                            <circle cx="150" cy="120" r="90" fill="#1E1E1E" stroke="rgba(201,168,76,0.2)" stroke-width="1"/>
+                            <circle cx="150" cy="120" r="75" fill="#2A1A0A" opacity="0.8"/>
+                            <circle cx="128" cy="108" r="9" fill="#CC3333" opacity="0.8"/>
+                            <circle cx="160" cy="102" r="8" fill="#CC3333" opacity="0.75"/>
+                            <circle cx="148" cy="132" r="9" fill="#CC3333" opacity="0.8"/>
+                            <ellipse cx="138" cy="122" rx="12" ry="4" fill="#9B59B6" opacity="0.5" transform="rotate(-20,138,122)"/>
+                            <ellipse cx="162" cy="118" rx="10" ry="4" fill="#9B59B6" opacity="0.45" transform="rotate(15,162,118)"/>
+                            <text x="150" y="185" text-anchor="middle" font-family="Georgia" font-size="9" fill="rgba(201,168,76,0.5)" letter-spacing="1">PEPPERONI C/ CEBOLA</text>
+                        </svg>
+                    </div>
                     <div class="card-badge especial-badge">Especial</div>
                 </div>
                 <div class="pizza-info">
@@ -239,15 +331,28 @@
                             <span>A partir de</span>
                             R$ 65,00
                         </div>
-                        <a href="https://authenticnapolitana.pedido.app.br/?utm_source=ig&utm_medium=social&utm_content=link_in_bio"
-                           class="btn-pedir" target="_blank">Pedir 🛵</a>
+                        <a href="#pedido" class="btn-pedir">Pedir 🛵</a>
                     </div>
                 </div>
             </div>
 
             <div class="pizza-card" data-categoria="especiais">
                 <div class="pizza-img">
-                    <img src="./pizza5.jpeg" alt="Milho c/ Bacon">
+                    <div class="pizza-img-placeholder">
+                        <svg viewBox="0 0 300 240" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+                            <rect width="300" height="240" fill="#161616"/>
+                            <circle cx="150" cy="120" r="90" fill="#1E1E1E" stroke="rgba(201,168,76,0.2)" stroke-width="1"/>
+                            <circle cx="150" cy="120" r="75" fill="#2A1A0A" opacity="0.8"/>
+                            <circle cx="132" cy="110" r="6" fill="#F39C12" opacity="0.9"/>
+                            <circle cx="155" cy="105" r="5" fill="#F39C12" opacity="0.85"/>
+                            <circle cx="168" cy="120" r="6" fill="#F39C12" opacity="0.9"/>
+                            <circle cx="140" cy="130" r="5" fill="#F39C12" opacity="0.8"/>
+                            <rect x="122" y="115" width="14" height="5" rx="2" fill="#8B4513" opacity="0.8"/>
+                            <rect x="155" y="125" width="12" height="5" rx="2" fill="#8B4513" opacity="0.75"/>
+                            <rect x="138" y="108" width="13" height="5" rx="2" fill="#8B4513" opacity="0.8"/>
+                            <text x="150" y="185" text-anchor="middle" font-family="Georgia" font-size="10" fill="rgba(201,168,76,0.5)" letter-spacing="1">MILHO C/ BACON</text>
+                        </svg>
+                    </div>
                     <div class="card-badge especial-badge">Especial</div>
                 </div>
                 <div class="pizza-info">
@@ -258,17 +363,28 @@
                             <span>A partir de</span>
                             R$ 65,00
                         </div>
-                        <a href="https://authenticnapolitana.pedido.app.br/?utm_source=ig&utm_medium=social&utm_content=link_in_bio"
-                           class="btn-pedir" target="_blank">Pedir 🛵</a>
+                        <a href="#pedido" class="btn-pedir">Pedir 🛵</a>
                     </div>
                 </div>
             </div>
 
-            <!-- Doces -->
-            <div class="pizza-card" data-categoria="doces">
+            <div class="pizza-card" data-categoria="classicas">
                 <div class="pizza-img">
-                    <img src="./pizza6.jpeg" alt="Portuguesa">
-                    <div class="card-badge doce-badge">Doce</div>
+                    <div class="pizza-img-placeholder">
+                        <svg viewBox="0 0 300 240" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+                            <rect width="300" height="240" fill="#161616"/>
+                            <circle cx="150" cy="120" r="90" fill="#1E1E1E" stroke="rgba(201,168,76,0.2)" stroke-width="1"/>
+                            <circle cx="150" cy="120" r="75" fill="#2A1A0A" opacity="0.8"/>
+                            <ellipse cx="138" cy="112" rx="9" ry="6" fill="#F5DEB3" opacity="0.7"/>
+                            <ellipse cx="162" cy="118" rx="8" ry="5" fill="#F5DEB3" opacity="0.65"/>
+                            <circle cx="145" cy="130" r="5" fill="#2C2C2C" opacity="0.8"/>
+                            <circle cx="163" cy="108" r="4" fill="#2C2C2C" opacity="0.7"/>
+                            <circle cx="128" cy="125" r="4" fill="#4B9B4B" opacity="0.8"/>
+                            <ellipse cx="155" cy="135" rx="7" ry="5" fill="#F5DEB3" opacity="0.6"/>
+                            <text x="150" y="185" text-anchor="middle" font-family="Georgia" font-size="11" fill="rgba(201,168,76,0.5)" letter-spacing="2">PORTUGUESA</text>
+                        </svg>
+                    </div>
+                    <div class="card-badge">Clássica</div>
                 </div>
                 <div class="pizza-info">
                     <h3>Portuguesa</h3>
@@ -278,16 +394,28 @@
                             <span>A partir de</span>
                             R$ 65,00
                         </div>
-                        <a href="https://authenticnapolitana.pedido.app.br/?utm_source=ig&utm_medium=social&utm_content=link_in_bio"
-                           class="btn-pedir" target="_blank">Pedir 🛵</a>
+                        <a href="#pedido" class="btn-pedir">Pedir 🛵</a>
                     </div>
                 </div>
             </div>
 
             <div class="pizza-card" data-categoria="doces">
                 <div class="pizza-img">
-                    <img src="./Doce.jpeg" alt="Pistache">
-                    <div class="card-badge doce-badge">Doce</div>
+                    <div class="pizza-img-placeholder">
+                        <svg viewBox="0 0 300 240" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+                            <rect width="300" height="240" fill="#161616"/>
+                            <circle cx="150" cy="120" r="90" fill="#1E1E1E" stroke="rgba(201,168,76,0.2)" stroke-width="1"/>
+                            <circle cx="150" cy="120" r="75" fill="#5D4E37" opacity="0.25"/>
+                            <circle cx="135" cy="112" r="7" fill="#8B7355" opacity="0.85"/>
+                            <circle cx="160" cy="108" r="6" fill="#8B7355" opacity="0.8"/>
+                            <circle cx="150" cy="130" r="7" fill="#8B7355" opacity="0.85"/>
+                            <circle cx="128" cy="128" r="5" fill="#7A9E7E" opacity="0.7"/>
+                            <circle cx="168" cy="124" r="5" fill="#7A9E7E" opacity="0.7"/>
+                            <circle cx="145" cy="115" r="4" fill="#7A9E7E" opacity="0.75"/>
+                            <text x="150" y="185" text-anchor="middle" font-family="Georgia" font-size="11" fill="rgba(201,168,76,0.5)" letter-spacing="2">PISTACHE</text>
+                        </svg>
+                    </div>
+                    <div class="card-badge doce-badge">Especial</div>
                 </div>
                 <div class="pizza-info">
                     <h3>Pistache</h3>
@@ -297,20 +425,17 @@
                             <span>A partir de</span>
                             R$ 70,00
                         </div>
-                        <a href="https://authenticnapolitana.pedido.app.br/?utm_source=ig&utm_medium=social&utm_content=link_in_bio"
-                           class="btn-pedir" target="_blank">Pedir 🛵</a>
+                        <a href="#pedido" class="btn-pedir">Pedir 🛵</a>
                     </div>
                 </div>
             </div>
 
         </div>
 
-        <!-- CTA Cardápio -->
         <div class="cardapio-cta">
-            <p>Quer ver o cardápio completo?</p>
-            <a href="https://authenticnapolitana.pedido.app.br/?utm_source=ig&utm_medium=social&utm_content=link_in_bio"
-               class="btn btn-primary" target="_blank">
-               Ver Cardápio Completo 🍕
+            <p>Quer conhecer mais sabores?</p>
+            <a href="#pedido" class="btn btn-primary">
+               Entre em Contato 🍕
             </a>
         </div>
     </section>
@@ -320,10 +445,60 @@
         <div class="sobre-container">
             <div class="sobre-visual">
                 <div class="img-frame">
-                    <img src="./ra.jpeg" alt="Nosso Pizzaiolo" id="img-chef">
-                    <div class="img-border"></div>
-                    <div class="img-flag">
+                    <div class="sobre-svg-art">
+                        <svg viewBox="0 0 400 480" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+                            <!-- Background -->
+                            <rect width="400" height="480" fill="#111111" rx="4"/>
+                            <!-- Top bar italiana -->
+                            <rect x="0" y="0" width="133" height="4" fill="#3A6B35" rx="0"/>
+                            <rect x="133" y="0" width="134" height="4" fill="#E8DCC8" rx="0"/>
+                            <rect x="267" y="0" width="133" height="4" fill="#B22222" rx="0"/>
+                            <!-- Main pizza illustration -->
+                            <circle cx="200" cy="200" r="145" fill="#1A0F00" stroke="rgba(201,168,76,0.3)" stroke-width="2"/>
+                            <circle cx="200" cy="200" r="130" fill="#2A1500" stroke="rgba(201,168,76,0.1)" stroke-width="1"/>
+                            <!-- Pizza sauce -->
+                            <circle cx="200" cy="200" r="110" fill="#8B0000" opacity="0.4"/>
+                            <!-- Cheese -->
+                            <ellipse cx="185" cy="185" rx="45" ry="40" fill="#E8DCC8" opacity="0.2"/>
+                            <ellipse cx="215" cy="215" rx="40" ry="35" fill="#E8DCC8" opacity="0.15"/>
+                            <!-- Toppings -->
+                            <circle cx="178" cy="175" r="12" fill="#CC3333" opacity="0.85"/>
+                            <circle cx="215" cy="168" r="11" fill="#CC3333" opacity="0.8"/>
+                            <circle cx="200" cy="205" r="12" fill="#CC3333" opacity="0.85"/>
+                            <circle cx="168" cy="210" r="10" fill="#CC3333" opacity="0.75"/>
+                            <circle cx="228" cy="200" r="11" fill="#CC3333" opacity="0.8"/>
+                            <!-- Basil leaves -->
+                            <ellipse cx="190" cy="220" rx="8" ry="5" fill="#3A6B35" opacity="0.9" transform="rotate(-30,190,220)"/>
+                            <ellipse cx="210" cy="185" rx="7" ry="4" fill="#3A6B35" opacity="0.85" transform="rotate(20,210,185)"/>
+                            <ellipse cx="235" cy="215" rx="6" ry="4" fill="#3A6B35" opacity="0.8" transform="rotate(-15,235,215)"/>
+                            <!-- Pizza slice lines -->
+                            <line x1="200" y1="70" x2="200" y2="330" stroke="rgba(201,168,76,0.08)" stroke-width="1"/>
+                            <line x1="75" y1="200" x2="325" y2="200" stroke="rgba(201,168,76,0.08)" stroke-width="1"/>
+                            <line x1="108" y1="108" x2="292" y2="292" stroke="rgba(201,168,76,0.08)" stroke-width="1"/>
+                            <line x1="292" y1="108" x2="108" y2="292" stroke="rgba(201,168,76,0.08)" stroke-width="1"/>
+                            <!-- Flame above pizza -->
+                            <path d="M200 45 C193 58 183 65 186 80 C188 90 195 95 200 98 C205 95 212 90 214 80 C217 65 207 58 200 45Z"
+                                  fill="url(#flameSobre)" opacity="0.85"/>
+                            <!-- Brand text -->
+                            <text x="200" y="370" text-anchor="middle" font-family="Georgia, serif" font-size="24" fill="#C9A84C" letter-spacing="5" font-weight="bold">FIAMMA</text>
+                            <text x="200" y="390" text-anchor="middle" font-family="Georgia, serif" font-size="12" fill="#E8DCC8" letter-spacing="10">VERA</text>
+                            <!-- Divider -->
+                            <rect x="100" y="400" width="200" height="1" fill="rgba(201,168,76,0.2)" rx="0.5"/>
+                            <text x="200" y="420" text-anchor="middle" font-family="Georgia, serif" font-size="8" fill="rgba(201,168,76,0.5)" letter-spacing="3">PIZZA ARTESANAL</text>
+                            <!-- Corner decorations -->
+                            <circle cx="30" cy="450" r="2" fill="#3A6B35" opacity="0.5"/>
+                            <circle cx="200" cy="450" r="2" fill="#C9A84C" opacity="0.5"/>
+                            <circle cx="370" cy="450" r="2" fill="#B22222" opacity="0.5"/>
+                            <defs>
+                                <linearGradient id="flameSobre" x1="0%" y1="100%" x2="0%" y2="0%">
+                                    <stop offset="0%" style="stop-color:#B22222;stop-opacity:1" />
+                                    <stop offset="50%" style="stop-color:#FF6B35;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#FFD700;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
                     </div>
+                    <div class="img-border"></div>
                 </div>
             </div>
             <div class="sobre-content reveal">
@@ -338,10 +513,10 @@
                     A pizza napolitana nasceu em Nápoles, Itália, por volta de 1700 e é reconhecida pela UNESCO como Patrimônio Cultural Imaterial da Humanidade. É um estilo completamente artesanal.
                 </p>
                 <p>
-                    Nossa massa é feita com apenas 4 ingredientes: água, sal, farinha importada da Itália tipo 00 e fermento biológico. A fermentação lenta dura de 12h a 24h de forma natural, o que proporciona digestibilidade superior e resulta em um sabor mais complexo e agradável, com notas sutis de acidez e aroma inconfundível.
+                    Nossa massa é feita com apenas 4 ingredientes: água, sal, farinha especial tipo 00 e fermento biológico. A fermentação lenta dura de 12h a 24h de forma natural, o que proporciona digestibilidade superior e resulta em um sabor mais complexo e agradável, com notas sutis de acidez e aroma inconfundível.
                 </p>
                 <p>
-                    A cobertura é intensa em sabor e balanceada em ingredientes — alta qualidade, importados, frescos e naturais, preparados preferencialmente de forma manual. Finalizada em fornos que chegam a 480°C, em pouco mais de um minuto produzem uma pizza de massa fina, bordas airadas, elegante e irresistível.
+                    Finalizada em fornos que chegam a 480°C, em pouco mais de um minuto produzem uma pizza de massa fina, bordas airadas, elegante e irresistível. A <strong>Fiamma Vera</strong> é a chama verdadeira que transforma ingredientes simples em uma experiência única.
                 </p>
                 <div class="sobre-stats">
                     <div class="stat">
@@ -380,11 +555,11 @@
                     <div class="depoimento-card">
                         <div class="quote-icon">"</div>
                         <div class="depoimento-stars">⭐⭐⭐⭐⭐</div>
-                        <p class="depoimento-text">Nunca vi e nem comi nada igual.. simplesmente deliciosa, saborosa, leve, todos os recheios individualmente percebido simplesmente uma alquimia de sabores... só mesmo na Itália que vcs nos permitiram ir até lá com essas iguarias que provei hoje</p>
+                        <p class="depoimento-text">Nunca vi e nem comi nada igual.. simplesmente deliciosa, saborosa, leve, todos os recheios individualmente percebido simplesmente uma alquimia de sabores. Só mesmo na Itália que vcs nos permitiram ir até lá com essas iguarias!</p>
                         <div class="depoimento-autor">
                             <div class="autor-avatar">🥰</div>
                             <div class="autor-info">
-                                <strong>Anonimo</strong>
+                                <strong>Anônimo</strong>
                                 <span>Cliente fiel ⭐</span>
                             </div>
                         </div>
@@ -392,11 +567,11 @@
                     <div class="depoimento-card">
                         <div class="quote-icon">"</div>
                         <div class="depoimento-stars">⭐⭐⭐⭐⭐</div>
-                        <p class="depoimento-text">Parabens adoramos! Lembramos de Napóles.</p>
+                        <p class="depoimento-text">Parabéns, adoramos! Lembramos de Nápoles.</p>
                         <div class="depoimento-autor">
                             <div class="autor-avatar">😊</div>
                             <div class="autor-info">
-                                <strong>Alessandra Sumara Cassago Posso</strong>
+                                <strong>Alessandra S.</strong>
                                 <span>Cliente fiel ⭐</span>
                             </div>
                         </div>
@@ -404,11 +579,11 @@
                     <div class="depoimento-card">
                         <div class="quote-icon">"</div>
                         <div class="depoimento-stars">⭐⭐⭐⭐⭐</div>
-                        <p class="depoimento-text">Exelente!!! Super saborosa! Massa deliciosa!!! Em cada pedaco dá para sentir o capricho que foi confeccionada.PARABéNS a toda a equipe e aos idealiziadores do authentic Napolitana🍕❤️</p>
+                        <p class="depoimento-text">Excelente! Super saborosa! Massa deliciosa! Em cada pedaço dá para sentir o capricho que foi confeccionada. Parabéns a toda a equipe!</p>
                         <div class="depoimento-autor">
                             <div class="autor-avatar">🥰</div>
                             <div class="autor-info">
-                                <strong>Glaucia Tech Dos Santos</strong>
+                                <strong>Glaucia T.</strong>
                                 <span>Cliente fiel ⭐</span>
                             </div>
                         </div>
@@ -416,12 +591,12 @@
                     <div class="depoimento-card">
                         <div class="quote-icon">"</div>
                         <div class="depoimento-stars">⭐⭐⭐⭐⭐</div>
-                        <p class="depoimento-text">Maravilhosa, como sempre de exelente qualidade.</p>
+                        <p class="depoimento-text">Maravilhosa, como sempre de excelente qualidade. Uma experiência gastronômica única que vale cada centavo!</p>
                         <div class="depoimento-autor">
                             <div class="autor-avatar">😄</div>
                             <div class="autor-info">
-                                <strong>Elizabeth Eidt</strong>
-                                <span>Primeira vez que provou, se tronou cliente Fiel</span>
+                                <strong>Elizabeth E.</strong>
+                                <span>Se tornou cliente fiel na primeira visita</span>
                             </div>
                         </div>
                     </div>
@@ -443,7 +618,7 @@
             <div class="section-title">
                 <div class="ornament">✦ ✦ ✦</div>
                 <h2>Faça seu Pedido</h2>
-                <p>Escolha como prefere entrar em contato conosco</p>
+                <p>Estamos prontos para te atender</p>
                 <div class="title-flag">
                     <span class="f-green"></span>
                     <span class="f-white"></span>
@@ -451,43 +626,25 @@
                 </div>
             </div>
 
-            <!-- PEDIDO PELO SITE -->
             <div class="pedido-site reveal">
-                <div class="pedido-site-icon">🛵</div>
-                <h3>Peça pelo nosso site</h3>
-                <p>Cardápio completo, valores atualizados e pedido fácil</p>
-                <a href="https://authenticnapolitana.pedido.app.br/?utm_source=ig&utm_medium=social&utm_content=link_in_bio"
-                   class="btn btn-primary" target="_blank" style="margin-top: 20px; display:inline-flex;">
-                   🍕 Acessar Cardápio Online
-                </a>
-            </div>
-
-            <div class="pedido-ou">
-                <span>ou fale diretamente</span>
-            </div>
-
-            <div class="pedido-options">
-                <a href="https://wa.me/5519999818943?text=" 
-                   class="pedido-option whatsapp-opt" target="_blank">
-                    <span class="pedido-option-icon"><img src="./wats-logo.png" alt="logo" id="wats"></span>
-                    <h3>WhatsApp</h3>
-                    <p>Envie sua mensagem e receba atendimento rápido e personalizado.</p>
-                    <br>
-                    <span class="cta-link green-cta">Clique para abrir ➜</span>
-                </a>
-                <a href="https://www.instagram.com/authentic_napolitana?igsh=MWFhM2d0ODhkc3BvMA==" 
-                   class="pedido-option instagram-opt" target="_blank">
-                    <span class="pedido-option-icon"><img src="ig.png" alt="logo" id="ig"></span>
-                    <h3>Instagram</h3>
-                    <p>Veja nossas midias incríveis, e conheca nossas imagens.</p>
-                    <br>
-                    <span class="cta-link red-cta">Nos siga ➜</span>
-                </a>
+                <div class="pedido-site-icon">🔥</div>
+                <h3>Bem-vindo à Fiamma Vera</h3>
+                <p>Entre em contato para fazer seu pedido ou tirar dúvidas sobre nosso cardápio</p>
+                <div class="pedido-contact-info">
+                    <div class="contact-item">
+                        <span class="contact-icon">📍</span>
+                        <span>Consulte nossa localização</span>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">🕐</span>
+                        <span>Veja nossos horários abaixo</span>
+                    </div>
+                </div>
             </div>
 
             <div class="pedido-horario reveal">
                 <div class="horario-header">
-                    <span class="h-flag">🇮🇹</span>
+                    <span class="h-flag">🔥</span>
                     <h3>Horário de Funcionamento</h3>
                 </div>
                 <div class="horario-grid">
@@ -529,26 +686,48 @@
         </div>
         <div class="footer-content">
             <div class="footer-brand">
-                <img src="./imgs/logo.jpeg" alt="Authentic Pizza Napolitana" class="footer-logo">
-                <p>A autêntica pizza napolitana, feita com ingredientes importados da Itália e muito amor. 
-                Trazemos Nápoles até você.</p>
-                <div class="social-links">
-                    <a href="https://www.instagram.com/authentic_napolitana?igsh=MWFhM2d0ODhkc3BvMA==" class="social-link ig" target="_blank">📸</a>
-                    <a href="https://wa.me/5519999818943" class="social-link wa" target="_blank">💬</a>
+                <div class="footer-svg-logo">
+                    <svg viewBox="0 0 160 80" xmlns="http://www.w3.org/2000/svg" width="160" height="80">
+                        <text x="10" y="32" font-family="Georgia, serif" font-size="22" fill="#C9A84C" letter-spacing="3" font-weight="bold">FIAMMA</text>
+                        <text x="10" y="50" font-family="Georgia, serif" font-size="11" fill="#E8DCC8" letter-spacing="8">VERA</text>
+                        <rect x="10" y="38" width="140" height="0.8" fill="rgba(201,168,76,0.3)"/>
+                        <text x="10" y="65" font-family="Georgia, serif" font-size="7" fill="rgba(201,168,76,0.5)" letter-spacing="3">PIZZA ARTESANAL</text>
+                        <!-- Flame small -->
+                        <path d="M148 20 C145 26 141 29 142 35 C143 38 146 40 148 41 C150 40 153 38 154 35 C155 29 151 26 148 20Z" fill="url(#flameFooter)" opacity="0.8"/>
+                        <defs>
+                            <linearGradient id="flameFooter" x1="0%" y1="100%" x2="0%" y2="0%">
+                                <stop offset="0%" style="stop-color:#B22222;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#FFD700;stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
                 </div>
+                <p>A chama verdadeira da pizza artesanal. Feita com ingredientes selecionados e muito amor. Trazemos a essência da culinária italiana até você.</p>
             </div>
             <div class="footer-col">
-                <h4>Contato</h4>
+                <h4>Navegação</h4>
                 <ul>
-                    <li><a href="https://wa.me/5519999818943" target="_blank">📱 (+55) 19 99981-8943</a></li>
-                    <li><p>📍 Santa Rita Do P. Quatro-SP</p></li>
-                    <li><a href="https://www.instagram.com/authentic_napolitana?igsh=MWFhM2d0ODhkc3BvMA==" target="_blank">📸 @authenticnapolitana</a></li>
+                    <li><a href="#hero">Início</a></li>
+                    <li><a href="#cardapio">Cardápio</a></li>
+                    <li><a href="#sobre">Nossa História</a></li>
+                    <li><a href="#depoimentos">Avaliações</a></li>
+                    <li><a href="#pedido">Pedidos</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Horários</h4>
+                <ul>
+                    <li><p>🔴 Segunda: Fechado</p></li>
+                    <li><p>🟡 Ter — Qui: 18h às 23h</p></li>
+                    <li><p>🟢 Sex: 18h às 00h</p></li>
+                    <li><p>🟢 Sáb: 17h às 00h</p></li>
+                    <li><p>🟡 Dom: 17h às 23h</p></li>
                 </ul>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>© 2024 <span class="brand-name">Authentic Pizza Napolitana</span>. Todos os direitos reservados. 
-            Feito com <span class="heart">❤️</span> e muito queijo italiano.</p>
+            <p>© 2024 <span class="brand-name">Fiamma Vera Pizza</span>. Todos os direitos reservados.
+            Feito com <span class="heart">❤️</span> e muito queijo.</p>
         </div>
     </footer>
 
@@ -562,7 +741,7 @@
 
         // ===== PARTICLES =====
         const particlesContainer = document.getElementById('particles');
-        const emojis = ['🌿', '🍅', '⭐', '🫒', '🧀', '🌶️', '🍃'];
+        const emojis = ['🌿', '🍅', '⭐', '🫒', '🧀', '🌶️', '🔥'];
 
         for (let i = 0; i < 12; i++) {
             const p = document.createElement('div');
@@ -633,7 +812,7 @@
                                 current = target;
                                 clearInterval(timer);
                             }
-                            num.textContent = target > 999 
+                            num.textContent = target > 999
                                 ? Math.floor(current).toLocaleString('pt-BR') + '+'
                                 : Math.floor(current) + '+';
                         }, 30);
@@ -645,29 +824,6 @@
 
         const sobreSection = document.getElementById('sobre');
         if (sobreSection) statsObserver.observe(sobreSection);
-
-        // ===== MENU FILTER =====
-        function filterMenu(categoria, event) {
-            const cards = document.querySelectorAll('.pizza-card');
-            const tabs = document.querySelectorAll('.menu-tab');
-
-            tabs.forEach(tab => tab.classList.remove('active'));
-            if (event && event.target) event.target.classList.add('active');
-
-            cards.forEach(card => {
-                if (categoria === 'todas' || card.dataset.categoria === categoria) {
-                    card.style.display = 'block';
-                    setTimeout(() => {
-                        card.style.opacity = '1';
-                        card.style.transform = 'scale(1)';
-                    }, 10);
-                } else {
-                    card.style.opacity = '0';
-                    card.style.transform = 'scale(0.9)';
-                    setTimeout(() => { card.style.display = 'none'; }, 300);
-                }
-            });
-        }
 
         // ===== SLIDER =====
         let currentSlide = 0;
